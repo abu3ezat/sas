@@ -63,10 +63,11 @@ body{
 /*/////////////////////////////*/
 
 .header{
-    margin-top: 4rem;
+    /*margin-top: 4rem;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 30px 0;
 
 }
 
@@ -185,9 +186,10 @@ body{
     margin: auto;
     background-color: #0b0757;
     border-radius: 100%;
-    border: 2px dashed #eeeeee;
     color: #ffffff;
 }
+
+
 
 .group-of-cards .card .icon i{
     font-size: 3rem;
@@ -218,10 +220,12 @@ body{
 .active:after{
     content: '';
     padding: 0;
-    height: 300px;
-    width: 100%;
-    background-color: rgba(2, 17, 251,0.2)!important;
+    height: 329px;
+    width: 91.4%;
+    background-color: rgba(2, 17, 251,0.15)!important;
     position: absolute;
+    border-radius: 100% 0 8px 0 ;
+
 
 
 }
@@ -287,13 +291,17 @@ body{
 }
 .butt-active{
     background-color: #fdd76e;
+    transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out;
+    transition-property: color, background-color, border-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s;
 
 
 }
 
 .butt-active:after{
     content: '';
-    transition-duration: 500ms;
     position: absolute;
     width: 50%;
     height: 7px;
@@ -301,9 +309,13 @@ body{
     border-radius: 6px 0 0 6px;
     bottom: -20px;
     right: 50%;
-
-
+    transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out;
+    transition-property: color, background-color, border-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s;
 }
+
 .features .feature-box{
     display: flex;
     flex-direction: row;
@@ -318,4 +330,52 @@ body{
     border-radius: 4px;
     font-size: 14px;
     margin-bottom: 1.5rem;
+}
+
+.progressbar{
+    height: 6px;
+    background-color: #f4f4ff;
+    display: flex;
+    overflow: hidden;
+    font-size: .75rem;
+    border-radius: .25rem;
+}
+
+.progressbar .percentage{
+    width: 90%;
+    background-color: #0811fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    transition: width .6s ease;
+}
+
+.progressbar .percentage2{
+    width: 70%;
+    background-color: #0811fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    transition: width .6s ease;
+}
+
+.progressbar .percentage3{
+    width: 85%;
+    background-color: #0811fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    transition: width .6s ease;
 }
